@@ -1,0 +1,23 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.right-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .right-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .right-container {
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

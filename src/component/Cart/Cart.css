@@ -1,0 +1,17 @@
+.info-container{
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 800px) {
+  .info-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cart-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
