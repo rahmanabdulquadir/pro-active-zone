@@ -10,7 +10,6 @@ const Home = () => {
     .then(res => res.json())
     .then(data => setCards(data))
   }, [])
-
   const handleAddToListBtn = (card) =>{
     const newCart = [...cart, card];
     setCart(newCart);

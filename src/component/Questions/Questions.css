@@ -1,0 +1,33 @@
+.question-container{
+  margin-top: 35px;
+  padding: 15px;
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.question-container div{
+  text-align: center;
+}
+.q-one{
+  background-color: rgb(210, 155, 166);
+  margin-right: 10px;
+  padding: 15px;
+}
+.q-two{
+  background-color: rgb(153, 214, 169);
+  margin-right: 10px;
+  padding: 15px;
+}
+.q-three{
+  background-color: rgb(229, 235, 169);
+  margin-right: 10px;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .question-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
