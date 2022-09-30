@@ -18,6 +18,9 @@ const Home = () => {
   }
   return (
     <div>
+      <div>
+      <h2 className='home-heading'>Select today’s exercise</h2>
+      </div>
       <div className='home-container'>
         <div className="right-container">
             {

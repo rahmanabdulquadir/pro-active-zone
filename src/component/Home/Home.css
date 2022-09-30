@@ -7,6 +7,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+.home-heading{
+  text-align: start;
+  margin-left: 20px;
+}
 
 @media only screen and (max-width: 1100px) {
   .right-container {

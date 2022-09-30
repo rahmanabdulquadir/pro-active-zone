@@ -1,6 +1,6 @@
 .navbar-container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 8px;
   background-color: coral;
@@ -8,7 +8,10 @@
 .navbar-container a{
   text-decoration: none;
   color: black;
-  margin-left: 15px;
+  margin-left: 25px;
+}
+.navbar-container a:hover{
+  text-decoration: underline;
 }
 @media only screen and (max-width: 600px) {
   .navbar-container {

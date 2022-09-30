@@ -4,6 +4,7 @@ const Card = ({card, handleAddToListBtn}) => {
   const { name, img, age, time } = card;
   return (
     <div>
+      
       <div className="card-container">
       <img src={img} alt="" />
       <h3>{name}</h3>
