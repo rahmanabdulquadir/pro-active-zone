@@ -1,9 +1,0 @@
-.body-container{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-.right-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}

@@ -1,0 +1,19 @@
+.navbar-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px;
+  background-color: coral;
+}
+.navbar-container a{
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .navbar-container {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

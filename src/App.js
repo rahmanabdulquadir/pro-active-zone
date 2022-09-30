@@ -1,11 +1,11 @@
 
 import './App.css';
-import BodyContainer from './component/BodyContainer/BodyContainer';
+import Navbar from './component/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <BodyContainer></BodyContainer>
+      <Navbar></Navbar>
     </div>
   );
 }
