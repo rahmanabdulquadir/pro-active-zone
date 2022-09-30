@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
+import "react-toastify/dist/ReactToastify.css";
+import { toast, ToastContainer } from "react-toastify";
+
 const Cart = (props) => {
   const { cart } = props;
   let total = 0;
@@ -15,6 +18,9 @@ const Cart = (props) => {
   };
 
   const local = localStorage.getItem("value");
+  const toastify = () => {
+    toast("You have completed your activity!", { position: "top-center" });
+  };
   return (
     <div className="cart-container">
       <div className="personal-detail">
@@ -74,7 +80,10 @@ const Cart = (props) => {
       <h4>Exercise Time: {total} Seconds</h4>
       <h4>Break Time: {local}</h4>
 
-      <div></div>
+      <div>
+        <button onClick={toastify}>Activity Compleated</button>
+      </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import './Questions.css'
+import "./Questions.css";
 const Questions = () => {
   return (
     <div className="question-container">
@@ -15,14 +15,14 @@ const Questions = () => {
       <div className="q-two">
         <h1>Differences between Props and States</h1>
         <p>
-          The state is an updatable structure that is used to contain data or
-          information about the component and can change over time. The change
-          in state can happen as a response to user action or system event. It
-          is the heart of the react component which determines the behavior of
-          the component and how it will render. <br />
-          Props are read-only components. It is an object which stores the value
-          of attributes of a tag and work similar to the HTML attributes. It
-          allows passing data from one component to other components.
+          State:The state is an updatable structure that is used to contain data
+          or information about the component and can change over time. The
+          change in state can happen as a response to user action or system
+          event. It is the heart of the react component which determines the
+          behavior of the component and how it will render Props: Props are
+          read-only components. It is an object which stores the value of
+          attributes of a tag and work similar to the HTML attributes. It allows
+          passing data from one component to other components.
         </p>
       </div>
       <div className="q-three">

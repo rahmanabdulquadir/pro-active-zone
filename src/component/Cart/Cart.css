@@ -10,10 +10,10 @@
 .personal-detail h2{
   margin-bottom: 2px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 920px) {
   .info-container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 }
 @media only screen and (max-width: 600px) {
