@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './Cart.css'
+import React, { useEffect, useState } from "react";
+import "./Cart.css";
 const Cart = (props) => {
   const { cart } = props;
   let total = 0;
@@ -7,19 +7,20 @@ const Cart = (props) => {
     total = total + element.time;
   }
 
-
-  const [data, setData] = useState("")
-  useEffect(() => {}, [data])
-  const setDataLocalStorage = brake => {
+  const [data, setData] = useState("");
+  useEffect(() => {}, [data]);
+  const setDataLocalStorage = (brake) => {
     setData(brake);
-    localStorage.setItem('value', brake)
-  }
+    localStorage.setItem("value", brake);
+  };
 
-  const local = localStorage.getItem('value')
+  const local = localStorage.getItem("value");
   return (
     <div className="cart-container">
-      <h2>Rahman Abdul Quadir</h2>
-      <small>Dhaka, Bangladesh</small>
+      <div className="personal-detail">
+        <h2>Rahman Abdul Quadir</h2>
+        <small>Dhaka, Bangladesh</small>
+      </div>
       <div className="info-container">
         <div>
           <h1>75kg</h1>
@@ -38,24 +39,43 @@ const Cart = (props) => {
         <h2>Add a break</h2>
         <div>
           <div>
-            <button><span onClick={brake => setDataLocalStorage(brake.target.innerText)}>30s</span></button>
-            <button><span onClick={brake => setDataLocalStorage(brake.target.innerText)}>40s</span></button>
-            <button><span onClick={brake => setDataLocalStorage(brake.target.innerText)}>50s</span></button>
-            <button><span onClick={brake => setDataLocalStorage(brake.target.innerText)}>60s</span></button>
+            <button>
+              <span
+                onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
+              >
+                30s
+              </span>
+            </button>
+            <button>
+              <span
+                onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
+              >
+                40s
+              </span>
+            </button>
+            <button>
+              <span
+                onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
+              >
+                50s
+              </span>
+            </button>
+            <button>
+              <span
+                onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
+              >
+                60s
+              </span>
+            </button>
           </div>
         </div>
-       
       </div>
       {/* <p>time: {cart.length}min</p> */}
       <h4>Exercise Time: {total} Seconds</h4>
       <h4>Break Time: {local}</h4>
 
-
-      <div>
-
-      </div>
+      <div></div>
     </div>
-
   );
 };
 

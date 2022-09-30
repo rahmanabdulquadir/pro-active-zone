@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-evenly;
   border-radius: 8px;
+  background-color: lightgray;
+}
+.personal-detail{
+  margin-bottom: 20px;
+}
+.personal-detail h2{
+  margin-bottom: 2px;
 }
 @media only screen and (max-width: 800px) {
   .info-container{
