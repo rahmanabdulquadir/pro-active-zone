@@ -6,7 +6,7 @@ const Card = ({card, handleAddToListBtn}) => {
     <div>
       <div className="card-container">
       <img src={img} alt="" />
-      <h3>Name: {name}</h3>
+      <h3>{name}</h3>
       <h4>For Age: {age}</h4>
       <p>Time: {time}s</p>
       <button
