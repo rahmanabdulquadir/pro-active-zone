@@ -30,5 +30,7 @@
   .right-container {
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 75px;
+    justify-content: center;
   }
 }

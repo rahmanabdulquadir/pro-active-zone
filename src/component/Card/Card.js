@@ -5,7 +5,7 @@ const Card = ({card, handleAddToListBtn}) => {
   return (
     <div>
       
-      <div className="card-container">
+      <div style={{textAlign: 'start',}} className="card-container">
       <img src={img} alt="" />
       <h3>{name}</h3>
       <h4>For Age: {age}</h4>

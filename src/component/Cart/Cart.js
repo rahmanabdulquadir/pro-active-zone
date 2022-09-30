@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Cart.css";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
+import {  faLocation } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Cart = (props) => {
   const { cart } = props;
@@ -24,9 +26,14 @@ const Cart = (props) => {
   return (
     <div className="cart-container">
       <div className="personal-detail">
-        <h2>Rahman Abdul Quadir</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_SIu1QdDJEXx9DNXxgsLTA3ELnOoTHp-fQ1f3-aT_ky2Fhkw8pY5AnOMhrceNL1PsR0&usqp=CAU" alt="" />
+       <div>
+       <h2>Rahman Abdul Quadir</h2>
+       <FontAwesomeIcon style={{marginRight: '7px'}} icon={faLocation}></FontAwesomeIcon>
         <small>Dhaka, Bangladesh</small>
+       </div>
       </div>
+        
       <div className="info-container">
         <div>
           <h1>75kg</h1>
@@ -42,31 +49,31 @@ const Cart = (props) => {
         </div>
       </div>
       <div className="add-break">
-        <h2>Add a break</h2>
+        <h2 style={{textAlign: 'start'}}>Add a break</h2>
         <div>
-          <div>
-            <button>
+          <div className="break-btn-container">
+            <button className="break-btn">
               <span
                 onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
               >
                 30s
               </span>
             </button>
-            <button>
+            <button className="break-btn">
               <span
                 onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
               >
                 40s
               </span>
             </button>
-            <button>
+            <button className="break-btn">
               <span
                 onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
               >
                 50s
               </span>
             </button>
-            <button>
+            <button className="break-btn">
               <span
                 onClick={(brake) => setDataLocalStorage(brake.target.innerText)}
               >
@@ -76,12 +83,18 @@ const Cart = (props) => {
           </div>
         </div>
       </div>
-      {/* <p>time: {cart.length}min</p> */}
-      <h4>Exercise Time: {total} Seconds</h4>
-      <h4>Break Time: {local}</h4>
+      <h1 style={{textAlign: 'start'}}>Exercise Details</h1>
+      <div className="ex-time-container">
+        <h2>Exercise Time: {total} Seconds</h2>
+      </div>
+      <div className="break-time-container">
+        <h2>Break Time: {local}</h2>
+      </div>
 
       <div>
-        <button onClick={toastify}>Activity Compleated</button>
+        <button className="btn-activity" onClick={toastify}>
+          Activity Completed
+        </button>
       </div>
       <ToastContainer></ToastContainer>
     </div>
